@@ -12,3 +12,7 @@
 {%- set config = default_config %}
 
 {%- set cassandra = {} %}
+
+{%- do cassandra.update({
+  'config': config
+   }) %}

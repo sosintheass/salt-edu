@@ -85,4 +85,4 @@ init_keyspace_cql:
 
 add_keyspace:
   cmd.run:
-    - name: "cqlsh 10.10.0.2 -f /root/commands.cql"
+    - name: "cqlsh {{ cassandra.config.listen_address }} -f /root/commands.cql"
